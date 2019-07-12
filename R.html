@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+	  <title>Recuperação</title>
+	  <meta charset="UTF-8">
+	</head>
+	<body>
+		<script>	
+		
+		var nt1, nt2, media, faltas, ch, chF, porcent;
+	
+		inicio();
+		function inicio(){
+		
+			mediaF();
+			chF();
+			
+		}if(media>=9&&media<=10&&porcent<=25){
+			alert("Nota O");
+		
+		}else if(media>=7&& media<=8.9&&porcent<=25){
+			alert("Nota B");
+		
+		}else if(media>=6&&media<=6.9&&porcent<=25){
+			alert("Nota S");
+		
+		}else if(media=0&&media<=5.9&&porcent<=25){
+		
+		}else{	
+			alert("Nota I");
+			alert("Aplicar Recuperação Paralela");
+		}		
+		function mediaF()
+		{
+		var Nota1=parseInt(prompt("Digite a 1° Nota"));
+		var Nota2=parseInt(prompt("Digite a 2° Nota"));
+		chF=ch/4;
+		media=(Nota1+Nota2)/2;
+		porcent=(Faltas*100)/ch;
+		}
+		function chF()
+		{
+		var Faltas=parseInt(prompt("Digite a Quantidade de Faltas"));
+		var ch=parseInt(prompt("Digite a Carga Horária"));
+		porcento=Faltas*100/(ch/4);
+		}
+		
+		</script>
+	</body>
+</html>

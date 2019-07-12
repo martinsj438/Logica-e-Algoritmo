@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<title>j</title>
+	<meta charset="UTF-8">
+</head>
+<body>
+	<script>
+		inicio();
+	function inicio()
+	{
+		var nt1, nt2, media, faltas, ch, chd, porcent;
+			nt1=+prompt("digite a primeira nota");
+			nt2=+prompt("digite a segunda nota");
+			faltas=+prompt("digite o número de faltas");
+			ch=+prompt("Digite a carga horária");
+			chd=ch/4;
+			media=(nt1+nt2)/2;
+			porcent=(faltas*100)/ch;
+					
+		if(media>=9&&media<=10&&porcent<25)
+		{
+			alert('Conceito O');
+		}
+		else if(media>=7&& media<=8.9&&porcent<25)
+		{
+			alert('Conceito B');
+		}
+		else if(media>=6&&media<=6.9&&porcent<25)
+		{
+			alert('Conceito S');
+		}
+		else
+		{
+			alert('Conceito I');
+			alert('Aplicar Recuperação Paralela')
+		}
+	}
+	</script>
+	</body>
+</html>

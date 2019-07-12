@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+	  <title>J</title>
+	  <meta charset="UTF-8">
+	</head>
+	<body>
+		<script>
+		/*Elaborar um programa que receba duas notas, retire a média e informe a situação do estudante de acordo com a seguinte regra:
+	
+	    Se média maior ou igual a 7 e numero de faltas for menor que 25% --> Aprovado
+		Senão Se média Menor que 7 e maior ou igual a 5 e faltas menor que 25% --> Recuperação
+	
+		Senão --> Reprovado
+		
+	    OBS.: Será necessário informar a carga horária da matéria e a partir da quantidade de faltas informadas, extrair-se-a automaticamente o percentual de faltas.*/
+  
+ 
+		
+		var n1, n2, media, cargadia;
+
+		n1=+prompt("Insira a primeira nota.");
+	    n2=+prompt("Insira a segunda nota.");
+		materia=+prompt("Insira a matéria.")
+		media=(n1+n2)/4
+		carga=+prompt("Insira a carga horária da matéria.");
+		falta=+prompt("Insira a quantidade de faltas.");
+		cargadia=carga/5;
+		porcento=falta*100/cargadia;
+		
+		if(media>=7 && porcento <25){
+		    alert("O aluno está aprovado pela media de "+media+" e percentual de falta de "+porcento+"%");
+		}else if(media<7&& media>=5 && porcento<25){
+		    alert("O aluno está em recuperaçãopela media de "+media+" e percentual de falta de "+porcento+"%");
+		}else{
+		alert("O aluno está reprovado pela  media de "+media+" e percentual de falta de "+porcento+"%");
+		}
+		
+		</script>
+	</body>
+</html>

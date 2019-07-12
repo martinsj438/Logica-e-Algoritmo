@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<title>j</title>
+	<meta charset="UTF-8">
+</head>
+	<body>
+		<script>
+		Inicio();
+		function Inicio(){
+		var opção=parseInt(prompt("Digite uma opção \n1)Soma \n2) Subtração \n3) Multiplicação \n4) Dividir"));
+		num=parseInt(prompt("Entre com o numero que deseja obter a tabuada."));	
+		switch(opção){
+			case 1:{
+				Somar(num);
+				break;
+			}
+			case 2:{
+				Subtrair(num);
+				break;
+			}
+			case 3:{
+				Multiplicar(num);
+				break;
+			}
+			case 4:{
+				Dividir(num);
+				break;
+			}
+			default:{
+				alert("Opção inválida!");
+				Inicio();
+				break;
+				
+			}
+		}
+		
+		function Somar(num){
+			document.write("<h2>Soma +</h2>");
+			for(x=0;x<=10;x++){
+				document.write(num+" + "+x+" = "+(num+x)+"<br>");
+			}
+		}
+		function Subtrair(num){
+			document.write("<h2>Subtrair -</h2>");
+			for(x=0;x<=10;x++){
+				document.write(num+" - "+x+" = "+(num+x)+"<br>");
+			}
+		}
+		function Multiplicar(num){
+			document.write("<h2>Multiplicar *</h2>");
+			for(x=0;x<=10;x++){
+				document.write(num+" x "+x+" = "+(num+x)+"<br>");
+			}
+		}
+		function Dividir(num){
+			document.write("<h2>Dividir /</h2>");
+			for(x=0;x<=10;x++){
+				document.write(num+" / "+x+" = "+(num+x)+"<br>");
+			}
+		}
+	}	
+		</script>
+	</body>
+</html>
+	

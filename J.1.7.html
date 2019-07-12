@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+	  <title>Jsm</title>
+	  <meta charset="UTF-8">
+	</head>
+	<body>
+		<script>
+			var Login;
+			var Senha;
+			var Tentativa;
+		
+			Login=prompt("Informe o seu Login");
+			Senha=+prompt("Informe a sua Senha");
+
+			if(Login=="s"&&Senha==123){
+			document.write("Acesso Permitido");
+			while(Tentativa<3){
+			Login=prompt("Informe o seu Login");
+			Senha=+prompt("Informe a sua Senha");
+			if(Login=="s"&&Senha==123){
+			document.write("Acesso Permitido");
+			Tentativa=4;
+			}else{
+			alert("Senha Incorreta, você ainda possui"+(2-Tentativa)+"Tentativas");
+			}
+			if(Tentativa==2){
+			document.write("Senha Bloqueada.");
+			
+			}
+			Tentativa++;
+			}
+			}	
+		</script>
+	</body>
+</html>

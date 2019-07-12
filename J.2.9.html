@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<title>Condicional</title>
+		<meta charset="utf-8"/>
+	</head>
+	<body>
+	<script>
+					
+	var notas = new Array();
+	var aux;
+	var cont=0;
+	var valRepete=0;
+	
+	for(i=0;i<5;i++){
+		notas[i] = +prompt("Entre com um valor numérico:");
+	}
+		
+	for(i=0;i<5;i++){
+		for(j=0;j<4;j++){
+			if(notas[j]<notas[j+1]){
+				aux = notas[j];
+				notas[j]=notas[j+1];
+				notas[j+1]=aux;
+			}
+		}
+	}
+		
+	for(var i=4;i>=0;i--){
+		document.write(notas[i]+"<br>");		
+	}
+		</script>
+	</body>
+</html>
+		
+		</script>
+	</body>
+</html>

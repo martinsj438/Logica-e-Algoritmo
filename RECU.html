@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<title>REC</title>
+	<meta charset="UTF-8">
+</head>
+<body>
+	<script>
+	
+	Inicio();
+	function Inicio(){
+	var N1,N2,Media,CH,CHD,Faltas,Porcento;
+	N1=+prompt("Digite a 1° Nota");
+	N2=+prompt("Digite a 2° Nota");
+	CH=+prompt("Digite a Carga Horária");
+	Faltas=+prompt("Digite o Números de Faltas");
+	Porcento=Faltas*100/(CH/4);
+	
+	Media=(N1+N2)/2;
+	
+	
+	if(Media>=0&&Media<5.9&&Porcento<=25){
+		alert("Resultado I. Sua porcentagem é" +Porcento+"%");
+		alert("Aplicar Recuperação Paralela. Sua porcentagem é" +porcento+"%");
+		
+	}else if(Media>=6.0&&Media<=6.9&&Porcento<=25){
+		alert("Resultado S. Sua porcentagem é" +Porcento+"%");
+		alert("Aprovado");
+		
+	}else if(Media>=7.0&&Media<=8.9&&Porcento<=25){
+		alert("Resultado B. Sua porcentagem é" +Porcento+"%");
+		alert("Aprovado");
+		
+	}else if(Media>=9.0&&Media<=10.00&&Porcento<=25){
+		alert("Resultado O. Sua porcentagem é" +Porcento+"%");
+		alert("Aprovado");
+	}
+	}
+	</script>
+</body>
+</html>

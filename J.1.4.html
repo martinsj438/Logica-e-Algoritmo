@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+	  <title>J</title>
+	  <meta charset="UTF-8">
+	</head>
+	<body>
+		<script>
+		/**/
+		
+		var n1, n2, media, nFaltas;
+
+		n1 =+ prompt("Informe a 1ª nota");
+		n2 =+ prompt("Informe a 2ª nota");
+		nFaltas =+ prompt("Informe a quantidade de faltas");
+        media = (n1+n2)/2;
+		
+		if(media >= 7 && nFaltas <10){
+          alert("O aluno está aprovado!")
+		
+		}else if(media >=5 && media <7 && nFaltas <10){
+		  alert("O aluno está em recuperação!");
+
+		}else{
+		  alert("O aluno está reprovado!");
+		}
+		
+		</script>
+	</body>
+</html>

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+	  <title>Jsm</title>
+	  <meta charset="UTF-8">
+	</head>
+	<body>
+		<script>
+		/*Fazer um programa que some os valores inseridos pelo Usuário até o momento em que ele digite a letra "x".
+		Ao digitar a letra "x", o programa deve exibir na tela o resultado da soma.*/
+		
+		/* Soma */
+
+		var num =+ prompt("Digite um número de 1 a 10");
+		var operacao = prompt("Qual operação matemática você deseja?")
+		var soma;
+		var x = 0;
+
+		if (operacao=="soma")
+		{
+			document.write("<b>Soma</b>"+"<br>");
+
+			for(r=0; r<=10; r++)
+			{
+				soma = num + x;
+				document.write(num+" + "+x+" = "+soma+"<br>");
+				x++;
+			}
+		}
+		else if(operacao=="subtração")
+		{
+			document.write("<b>Subtração</b>"+"<br>");
+
+			for(r=0; r<=10; r++)
+			{
+				soma = num - x;
+				document.write(num+" - "+x+" = "+soma+"<br>");
+				x++;
+			}
+		}
+		else if(operacao=="multiplicação")
+		{
+			document.write("<b>Multiplicação</b>"+"<br>");
+
+			for(r=0; r<=10; r++)
+			{
+				soma = num * x;
+				document.write(num+" x "+x+" = "+soma+"<br>");
+				x++;
+			}
+		}
+		else
+		{
+			document.write("<b>Divisão</b>"+"<br>");
+
+			for(r=0; r<=10; r++)
+			{
+				soma = num / x;
+				document.write(num+" : "+x+" = "+soma+"<br>");
+				x++;
+			}
+		}
+
+		/* Subtração */
+		/* Multiplicação */
+		/* Divisão */
+		
+			
+		</script>
+	</body>
+</html>
